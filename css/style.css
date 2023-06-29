@@ -6,11 +6,32 @@
   box-sizing: border-box;
   list-style: none;
   font-family: "Montserrat", sans-serif;
-  /* outline: 1px solid yellowgreen; */
+}
+#webkit{
+  text-align: center;
+  color: rgb(255, 255, 255);
+  padding: 20px;
+  font-family: 'Times New Roman', Times, serif;
+}
+.glow {
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px black, 0 0 20px #f7086c, 0 0 30px rgb(255, 27, 141), 0 0 40px rgb(255, 36, 128), 0 0 50px rgb(255, 0, 157), 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #f065f5, 0 0 30px rgb(255, 121, 255), 0 0 50px ,  0 0 70px #f06a9d, 0 0 80px rgb(241, 105, 168);
+  }
 }
 
 body {
-  background: #585c68;
+  background-image: url(https://wallpapers-clan.com/wp-content/uploads/2021/01/pink-aesthetic-think-happy-thoughts-wallpaper-scaled.jpg);
   font-size: 14px;
   line-height: 22px;
   color: #555555;
@@ -36,7 +57,7 @@ body {
 
 .resume .resume_left {
   width: 280px;
-  background: #0bb5f4;
+  background: #ff0077;
 }
 
 .resume .resume_left .resume_profile {
@@ -58,16 +79,16 @@ body {
 }
 
 .resume .resume_left .bold {
-  color: #fff;
+  color: #000000;
 }
 
 .resume .resume_left .regular {
-  color: #b1eaff;
+  color: #000000;
 }
 
 .resume .resume_item {
   padding: 25px 0;
-  border-bottom: 2px solid #b1eaff;
+  border-bottom: 2px solid #fd0464;
 }
 
 .resume .resume_left .resume_item:last-child,
@@ -89,19 +110,12 @@ body {
   width: 35px;
   height: 35px;
   background: #fff;
-  color: #0bb5f4;
+  color: #ff009d;
   border-radius: 50%;
   margin-right: 15px;
   font-size: 16px;
   position: relative;
 }
-
-.resume .resume_left ul li .icon2{
-    border-radius: 50% !important;
-}
-
-
-
 
 .resume .icon i,
 .resume .resume_right .resume_hobby ul li i {
@@ -112,13 +126,13 @@ body {
 }
 
 .resume .resume_left ul li .data {
-  color: #b1eaff;
+  color: #f8f0f0;
 }
 
 .resume .resume_left .resume_skills ul li {
   display: flex;
   margin-bottom: 10px;
-  color: #b1eaff;
+  color: #000000;
   justify-content: space-between;
   align-items: center;
 }
@@ -131,7 +145,7 @@ body {
   width: 60%;
   margin: 0 5px;
   height: 5px;
-  background: #009fd9;
+  background: #ffffff;
   position: relative;
 }
 
@@ -144,7 +158,7 @@ body {
   top: 0;
   left: 0;
   height: 100%;
-  background: #fff;
+  background: #080808;
 }
 
 .resume .resume_left .resume_social .semi-bold {
@@ -159,7 +173,7 @@ body {
 }
 
 .resume .resume_right .bold {
-  color: #0bb5f4;
+  color: #ff0080;
 }
 
 .resume .resume_right .resume_work ul,
@@ -195,7 +209,7 @@ body {
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  border: 2px solid #0bb5f4;
+  border: 2px solid #ff00c8;
 }
 
 .resume .resume_right .resume_work ul li:after,
@@ -206,7 +220,7 @@ body {
   left: -21px;
   width: 2px;
   height: 115px;
-  background: #0bb5f4;
+  background: #ff00c8;
 }
 
 .resume .resume_right .resume_hobby ul {
@@ -217,10 +231,10 @@ body {
 .resume .resume_right .resume_hobby ul li {
   width: 80px;
   height: 80px;
-  border: 2px solid #0bb5f4;
+  border: 2px solid #ff0077;
   border-radius: 50%;
   position: relative;
-  color: #0bb5f4;
+  color: #ff0077;
 }
 
 .resume .resume_right .resume_hobby ul li i {
@@ -234,13 +248,12 @@ body {
   right: -52px;
   width: 50px;
   height: 2px;
-  background: #0bb5f4;
+  background: #ff00bf;
 }
 
 .resume .resume_right .resume_hobby ul li:last-child:before {
   display: none;
 }
-
 
 .portfolio-container{
     display: flex;
